@@ -1,12 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import SelectPayment from "./SelectPayment";
-const Payment = () => {
-  const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/Payment/SelectPayment");
-  };
+const AddPayment = () => {
   return (
     <div className=" w-full ">
       {/* header */}
@@ -38,28 +32,48 @@ const Payment = () => {
       </div>
       {/* Payment mtd */}
       <div className="px-40 font-bold text-[1.5rem] text-[#080404] py-5">
-        SELECT PAYMENT METHOD
+        ADD PAYMENT METHOD
         <div className="text-[0.9rem] text-[#080404]">
           {" "}
           All payments are secured and encrypted
         </div>
       </div>
+      {/* form */}
+      <div className="px-40 flex justify-between mb-40 gap-40 ">
+        <div className=" flex flex-col w-1/2 mt-4 gap-6">
+          <div className="rounded-[0.7rem] border w-full py-3 pl-5">
+            <span className="    text-[1rem]  text-[#898989]">
+              Enter Cardholder Name
+            </span>
+          </div>
+          <div className="rounded-[0.7rem] border w-full py-3 pl-5">
+            <span className="    text-[1rem]  text-[#898989]">
+              Enter Card Number
+            </span>
+          </div>
+          <div className="rounded-[0.7rem] border w-full py-3 pl-5">
+            <span className="    text-[1rem]  text-[#898989]">
+              Enter Expiry date
+            </span>
+          </div>
 
-      {/* Add box */}
-      <div className="px-40  flex justify-between ">
-        <div
-          onClick={handleClick}
-          className="rounded-2xl hover:cursor-pointer bg-[#F8F8F8]  flex flex-col w-[25.4rem] gap-5 h-60 justify-center items-center "
-        >
-          <span className="font-light text-[5rem] text-[#787878] leading-10">
-            +
-          </span>
-          <span className="font-medium text-[1rem] text-[#787878]">
-            Add New Payment Method
-          </span>
+          <div className=" flex flex-row self-start justify-center items-center  ">
+            <div className="rounded-[1.4rem] border  flex justify-center items-center w-[1rem] h-[1rem]  ">
+              <div className="rounded-[0.6rem] bg-[#63B178] w-[0.5rem] h-[0.5rem] "></div>
+            </div>
+            <p className=" ml-3 text-[0.8rem]">
+              I give my consent and accept all terms and condition
+            </p>
+          </div>
+          <div className=" mt-10 py-4 rounded-[1.1rem] hover:cursor-pointer bg-[#63B178] flex justify-center items-center w-[25.4rem]">
+            <span className=" font-semibold text-[1rem] text-[#FFFFFF]">
+              Add Payment Method
+            </span>
+          </div>
         </div>
         <img className="w-[30.3rem] h-[24.9rem]" />
       </div>
+
       <div className="bg-[linear-gradient(90deg,#FFFFFF,#D9D9D9,#FFFFFF)] mt-40 h-[0.1rem] px-40"></div>
       <span className="font-medium text-[0.8rem] text-[#4E4E4E] px-40 align-middle flex justify-center py-8">
         © 2024 MYFASTX TECHNOLOGIES PVT LTD. All Rights Reserved CIN:
@@ -69,4 +83,4 @@ const Payment = () => {
   );
 };
 
-export default Payment;
+export default AddPayment;
