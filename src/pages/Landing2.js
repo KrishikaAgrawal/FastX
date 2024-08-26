@@ -1,12 +1,6 @@
 import React from "react";
-import Payment from "./Payment";
-import { useNavigate } from "react-router-dom";
-const Landing = () => {
-  const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/Payment");
-  };
+const Landing2 = () => {
   return (
     <div className="flex w-full">
       <div className="flex flex-col w-full">
@@ -82,10 +76,7 @@ const Landing = () => {
                   city.
                   <br />
                 </div>
-                <div
-                  onClick={handleClick}
-                  className="rounded-md w-52 h-10 bg-black flex justify-center items-center hover:cursor-pointer"
-                >
+                <div className="rounded-md w-52 h-10 bg-black flex justify-center items-center">
                   <span className="text-[0.8rem]  text-[#FFFFFF]">
                     Register now for just Rs. 999!
                   </span>
@@ -488,10 +479,7 @@ const Landing = () => {
             satisfaction of delivering smiles across the city.
             <br />
           </div>
-          <div
-            onClick={handleClick}
-            className="rounded-md w-52 h-10 bg-black flex justify-center items-center hover:cursor-pointer"
-          >
+          <div className="rounded-md w-52 h-10 bg-black flex justify-center items-center">
             <span className="text-[0.8rem]  text-[#FFFFFF]">
               Register now for just Rs. 999!
             </span>
@@ -507,4 +495,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Landing2;
