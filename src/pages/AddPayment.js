@@ -71,7 +71,10 @@ const AddPayment = () => {
             </span>
           </div>
         </div>
-        <img className="w-[30.3rem] h-[24.9rem]" />
+        <img
+          src="/assets/images/Payment.png"
+          className="w-[30.3rem] h-[24.9rem]"
+        />
       </div>
 
       <div className="bg-[linear-gradient(90deg,#FFFFFF,#D9D9D9,#FFFFFF)] mt-40 h-[0.1rem] px-40"></div>

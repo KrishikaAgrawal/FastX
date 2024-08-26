@@ -223,7 +223,10 @@ const Landing = () => {
               </div>
             </div>
             <div className=" flex items-center  ">
-              <img className="w-[24.3rem] h-[24.6rem]" />
+              <img
+                src="assets/images/vehicles.png"
+                className="w-[30rem] h-[24.6rem]"
+              />
             </div>
           </div>
         </div>

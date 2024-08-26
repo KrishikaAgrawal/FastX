@@ -46,7 +46,7 @@ const Payment = () => {
       </div>
 
       {/* Add box */}
-      <div className="px-40  flex justify-between ">
+      <div className="px-40  flex justify-between pt-4">
         <div
           onClick={handleClick}
           className="rounded-2xl hover:cursor-pointer bg-[#F8F8F8]  flex flex-col w-[25.4rem] gap-5 h-60 justify-center items-center "
@@ -58,7 +58,10 @@ const Payment = () => {
             Add New Payment Method
           </span>
         </div>
-        <img className="w-[30.3rem] h-[24.9rem]" />
+        <img
+          src="/assets/images/Payment.png"
+          className="w-[30.3rem] h-[24.9rem]"
+        />
       </div>
       <div className="bg-[linear-gradient(90deg,#FFFFFF,#D9D9D9,#FFFFFF)] mt-40 h-[0.1rem] px-40"></div>
       <span className="font-medium text-[0.8rem] text-[#4E4E4E] px-40 align-middle flex justify-center py-8">

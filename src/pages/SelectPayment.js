@@ -46,7 +46,7 @@ const SelectPayment = () => {
       </div>
 
       {/* Add box */}
-      <div className="px-40 flex justify-between mb-40 ">
+      <div className="px-40 flex justify-between mb-40 pt-4 ">
         <div className=" flex flex-col gap-6">
           <div className="rounded-2xl border border-black flex w-[25.4rem] items-end h-52 pb-4  ">
             <div className=" flex  w-full px-5 justify-between">
@@ -89,7 +89,10 @@ const SelectPayment = () => {
             </div>
           </div>
         </div>
-        <img className="w-[30.3rem] h-[24.9rem]" />
+        <img
+          src="/assets/images/Payment.png"
+          className="w-[30.3rem] h-[24.9rem]"
+        />
       </div>
       <div
         onClick={handleClick}
