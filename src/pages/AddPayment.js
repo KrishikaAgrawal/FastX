@@ -41,21 +41,24 @@ const AddPayment = () => {
       {/* form */}
       <div className="px-40 flex justify-between mb-40 gap-40 ">
         <div className=" flex flex-col w-1/2 mt-4 gap-6">
-          <div className="rounded-[0.7rem] border w-full py-3 pl-5">
+          {/* <div className="rounded-[0.7rem] border w-full py-3 pl-5">
             <span className="    text-[1rem]  text-[#898989]">
               Enter Cardholder Name
             </span>
-          </div>
-          <div className="rounded-[0.7rem] border w-full py-3 pl-5">
-            <span className="    text-[1rem]  text-[#898989]">
-              Enter Card Number
-            </span>
-          </div>
-          <div className="rounded-[0.7rem] border w-full py-3 pl-5">
-            <span className="    text-[1rem]  text-[#898989]">
-              Enter Expiry date
-            </span>
-          </div>
+          </div> */}
+          <input
+            placeholder="Enter Cardholder Name"
+            className="text-[#898989] rounded-[0.7rem] border w-full py-3 pl-5"
+          />
+          <input
+            placeholder="  Enter Card Number"
+            type="number"
+            className="text-[#898989] rounded-[0.7rem] border w-full py-3 pl-5"
+          />
+          <input
+            placeholder="Enter Expiry date"
+            className="text-[#898989] rounded-[0.7rem] border w-full py-3 pl-5"
+          />
 
           <div className=" flex flex-row self-start justify-center items-center  ">
             <div className="rounded-[1.4rem] border  flex justify-center items-center w-[1rem] h-[1rem]  ">
@@ -65,11 +68,12 @@ const AddPayment = () => {
               I give my consent and accept all terms and condition
             </p>
           </div>
-          <div className=" mt-10 py-4 rounded-[1.1rem] hover:cursor-pointer bg-[#63B178] flex justify-center items-center w-[25.4rem]">
-            <span className=" font-semibold text-[1rem] text-[#FFFFFF]">
-              Add Payment Method
-            </span>
-          </div>
+          <button
+            type="submit"
+            className="font-semibold mt-10 text-[#FFFFFF] py-4 rounded-[1.1rem] hover:cursor-pointer bg-[#63B178] flex justify-center items-center w-[25.4rem]"
+          >
+            Add Payment Method
+          </button>
         </div>
         <img
           src="/assets/images/Payment.png"

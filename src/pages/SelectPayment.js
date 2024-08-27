@@ -94,14 +94,14 @@ const SelectPayment = () => {
           className="w-[30.3rem] h-[24.9rem]"
         />
       </div>
-      <div
+      <button
         onClick={handleClick}
-        className="mx-40 py-4 rounded-[1.1rem] hover:cursor-pointer bg-[#63B178] flex justify-center items-center w-[25.4rem]"
+        type="submit"
+        className="font-semibold mx-40 mt-10 text-[#FFFFFF] py-4 rounded-[1.1rem] hover:cursor-pointer bg-[#63B178] flex justify-center items-center w-[25.4rem]"
       >
-        <span className="w-[7.6rem] font-semibold text-[1rem] text-[#FFFFFF]">
-          Proceed to Pay
-        </span>
-      </div>
+        Proceed to Pay
+      </button>
+
       <div className="bg-[linear-gradient(90deg,#FFFFFF,#D9D9D9,#FFFFFF)] mt-40 h-[0.1rem] px-40"></div>
       <span className="font-medium text-[0.8rem] text-[#4E4E4E] px-40 align-middle flex justify-center py-8">
         © 2024 MYFASTX TECHNOLOGIES PVT LTD. All Rights Reserved CIN:
